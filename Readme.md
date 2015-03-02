@@ -1,3 +1,5 @@
-# CSIC
+# csic
 
-Exploring IndexedDB.
+Client Side Incremental Cache (CSIC)
+
+  Exploring IndexedDB.
