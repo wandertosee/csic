@@ -198,15 +198,14 @@
     var db,
         queryConfig = window.location.hash.split('/'),
         uiConfig = {
-            itemsId: document.getElementById('listItems'),
-            ul: document.querySelector('ul'),
-            input: document.getElementById('new'),
-            searchDisplay: document.getElementById('searchDisplay'),
-            searchSelector: document.getElementById('searchSelector'),
-            search: document.getElementById('searchForm'),
-            searchFormId: 'searchForm',
-            searchAttr: document.getElementById('searchAttr'),
-            searchValue: document.getElementById('searchValue')
+            itemsId: document.getElementById('listItems'), // Found Recordset
+            input: document.getElementById('new'), // new record form
+            searchSelector: document.getElementById('searchSelector'), // search dropdown
+            searchFormId: 'searchForm', // Search Form ID
+            search: document.getElementById('searchForm'), // Search Form
+            searchAttr: document.getElementById('searchAttr'), // Attribute to be searched / Hidden input set by searchSelector
+            searchValue: document.getElementById('searchValue'), // Search Value
+            searchDisplay: document.getElementById('searchDisplay'), // Current Search Attribute / Drop Down title
         },
         dbConfig = {
             _dbName: queryConfig[1],
